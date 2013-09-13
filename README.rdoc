@@ -15,10 +15,10 @@ a patient and the details of their treatment.
 To explore the application, by default one user will be created with admin priviledges such as, creating other users (doctors and staff).
 username and password of the default admin user are, "admin@hms.com" and "abc123" respectively.
 
-How setup this application locally:
+How to setup this application locally:
 
 Pre-requisite
-Ruby on rails stack is installed and working perfectly fine on your system.
+Ruby on rails 3 stack is installed and working perfectly fine on your system.
 
 Steps to setup the application:
 1. check out the code for the repository.
