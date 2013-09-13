@@ -1,0 +1,45 @@
+<h4><%=t(:reports, :scope => :topics)%></h4>
+<div class="container">
+ <%= form_for :report, :url => fetchReports_path, :remote => true, :html => {:class => "form well", :id => "reportsFormId"} do |r|%>
+      <div class="row-fluid">
+        <% if @my_reports != true %>
+            <div class="control-group span6">
+              <% if @type == SessionsHelper::DOCTOR%>
+                <%=r.label t(:doctors, :scope => :widget_names)%>
+              <%else%>
+                <%=r.label t(:staff, :scope => :widget_names)%>
+              <% end %>
+                <%=r.select(:user_id, @users_select_box)%>
+            </div>
+        <% end %>
+        <div class="control-group span6">
+          <%=r.label t(:treatment_type, :scope => :widget_names)%>
+          <%=r.select(:treatment_id, @comments_select_box)%>
+        </div>
+        <% if @my_reports == true%>
+            <%= r.hidden_field :user_id, :value => "#{@current_user.id}"%>
+        <% end %>
+      </div>
+      <div class="row-fluid">
+        <div class="control-group span6">
+          <%=r.label t(:from_date, :scope => :widget_names)%>
+          <%=r.text_field :from_date%>
+        </div>
+        <div class="control-group span6">
+          <%=r.label t(:to_date, :scope => :widget_names)%>
+          <%=r.text_field :to_date%>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="control-group span6">
+          <%=r.submit t(:search, :scope => :widget_names), :class => "btn btn-primary"%>
+        </div>
+        <div id="exportPdfId" class="control-group span6" style="display:none;">
+          <%= link_to t(:export_as_pdf, :scope => :widget_names), "/fetchReportsPdf.pdf", :id => "download_reports_id", :class => "btn btn-primary", :remote => true%>
+        </div>
+      </div>
+  <% end %>
+</div>
+
+<div id="loadUserPatients">
+</div>

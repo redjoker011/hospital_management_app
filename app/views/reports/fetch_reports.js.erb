@@ -1,0 +1,26 @@
+$("#tableId").remove();
+$("#loadUserPatients").html("<%=escape_javascript( render 'user_patients/user_patient', :user_patients => @user_patients, :reportPage => true)%>");
+
+var val = "<%=!@user_patients.empty?%>";
+if(val == 'true'){
+  $("#exportPdfId").css("display", "block");
+}else {
+    $("#exportPdfId").css("display", "none");
+}
+$(".pagination").find("a").attr("data-remote", true);
+
+$(".pagination a").click(function(){
+    var page = this.href.split("&page=")[1];
+    $("#reportsFormId").append('<input type="hidden" name="page" value="'+page+'">');
+    $("#reportsFormId").submit();
+    return false;
+});
+
+$('#download_reports_id').click(function(){
+    var search_user_id = $("#report_user_id").val();
+    var search_treat_type = $("#report_treatment_id").val();
+    var search_frm_date = $("#report_from_date").val();
+    var search_to_date = $("#report_to_date").val();
+    window.location.href = $(this).attr('href') +"?user_id="+search_user_id+"&treatment_id="+search_treat_type+"&from_date="+search_frm_date+"&to_date="+search_to_date;
+    return false;
+});

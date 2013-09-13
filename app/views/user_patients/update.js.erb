@@ -1,0 +1,17 @@
+
+<% if @flashMessage[:success] %>
+    $("#flashMessage").html('<div class="alert alert-success"><%= @flashMessage[:success] %></div>');
+
+    var ptId = $("#user_patient_id").val();
+    $("#comment"+ptId).html($("#user_patient_comments").val());
+    $("#amt"+ptId).html($("#user_patient_amount").val());
+
+<%else %>
+    $("#flashMessage").html('<div class="alert alert-error"><%= @flashMessage[:error] %></div>');
+<% end %>
+
+$("#showDialog").hide();
+$('.modal-backdrop').remove();
+$("#flashMessage").fadeOut(2500);
+
+

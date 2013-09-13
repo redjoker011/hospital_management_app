@@ -1,0 +1,4 @@
+
+$("#tableId").remove();
+$("#loadUserPatients").html("<%=escape_javascript( render 'user_patients/user_patient', :user_patients => @user_patients, :reportPage => false)%>");
+$(".pagination").find("a").attr("data-remote", true);

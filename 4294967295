@@ -1,0 +1,6 @@
+      invoke  active_record
+      create    db/migrate/20130911021511_create_user_patients.rb
+      create    app/models/user_patient.rb
+      invoke    test_unit
+      create      test/unit/user_patient_test.rb
+      create      test/fixtures/user_patients.yml

@@ -1,0 +1,10 @@
+
+
+<div class="container">
+<table class="table table-striped table-bordered table-condensed">
+  <tr><td><%=t(:first_name, :scope => :table)%></td><td><%= @user.first_name%></td></tr>
+  <tr><td><%=t(:last_name, :scope => :table)%></td><td><%= @user.last_name%></td></tr>
+  <tr><td><%=t(:email_id, :scope => :table)%></td><td><%= @user.email_id%></td></tr>
+  <tr><td><%=t(:user_type, :scope => :table)%></td><td><%= @user.user_type.user_type_name%></td></tr>
+</table>
+</div>

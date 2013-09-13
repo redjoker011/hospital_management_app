@@ -1,0 +1,35 @@
+<h4><%=t(:search_patient, :scope => :topics)%></h4>
+<div class="row-fluid">
+  <%= form_for :patient, :url => searchPatients_path , :remote => true, :html => {:class => "form well",  :id => "searchForm"} do |p|%>
+      <div class="row-fluid">
+        <div class="control-group span6">
+          <%=p.label t(:patient_id, :scope => :widget_names)%>
+          <%=p.text_field :patient_id%>
+        </div>
+        <div class="control-group span6">
+          <%=p.label t(:email_id_label, :scope => :widget_names)%>
+          <%=p.text_field :email_id%>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="control-group span6">
+          <%=p.label t(:first_name_label, :scope => :widget_names)%>
+          <%=p.text_field :first_name%>
+        </div>
+        <div class="control-group span6">
+          <%=p.label t(:last_name_label, :scope => :widget_names)%>
+          <%=p.text_field :last_name%>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="control-group span6">
+          <%=p.submit t(:search, :scope => :widget_names), :class => "btn btn-primary"%>
+        </div>
+      </div>
+  <% end %>
+</div>
+
+<div id="patientIndexId">
+  <%= render 'patients/patient', :patients => @patients%>
+</div>

@@ -1,0 +1,17 @@
+<h4><%=t(:all_users, :scope => :topics)%></h4>
+<%= will_paginate%>
+
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+    <tr>
+      <td><%=t(:first_name, :scope => :table)%></td>
+      <td><%=t(:last_name, :scope => :table)%></td>
+      <td><%=t(:email_id, :scope => :table)%></td>
+      <td><%=t(:user_type, :scope => :table)%></td>
+      <td></td>
+    </tr>
+  </thead>
+  <%= render @users%>
+</table>
+
+<%= will_paginate%>

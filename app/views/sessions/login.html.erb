@@ -1,0 +1,15 @@
+<div style="padding-left: 30%;padding-top: 10%;">
+<%= form_for(:session, :url => sessions_path) do |s|%>
+    <div>
+      <%= s.label t(:email_id_label, :scope => :widget_names) %>
+      <%= s.text_field :email_id %>
+    </div>
+    <div>
+      <%= s.label t(:password_label, :scope => :widget_names) %>
+      <%= s.password_field :password %>
+    </div>
+    <div>
+      <%= s.submit t(:login_btn, :scope => :widget_names), :class => "btn"%>
+    </div>
+<% end %>
+</div>

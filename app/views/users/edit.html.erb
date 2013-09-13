@@ -1,0 +1,29 @@
+<h4><%=t(:update_user, :scope => :topics)%></h4>
+<div class="row-fluid">
+<%= form_for @user, :html => {:class => "form well"} do |u|%>
+    <%= render 'common/error_messages', :object => u.object %>
+    <div class="row-fluid">
+        <div class="control-group span6">
+          <%=u.label t(:first_name_label, :scope => :widget_names)%>
+          <%=u.text_field :first_name%>
+        </div>
+        <div class="control-group span6">
+          <%=u.label t(:last_name_label, :scope => :widget_names)%>
+          <%=u.text_field :last_name%>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="control-group span6">
+          <%=u.label t(:email_id_label, :scope => :widget_names)%>
+          <%=u.text_field :email_id%>
+        </div>
+        <div class="control-group span6">
+          <%=u.label t(:user_type_label, :scope => :widget_names)%>
+          <%=u.select(:user_type_id, @user_types) %>
+        </div>
+    </div>
+    <div>
+      <%=u.submit t(:update_btn, :scope => :widget_names), :class => "btn btn-primary"%>
+    </div>
+<% end %>
+</div>

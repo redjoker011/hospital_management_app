@@ -1,0 +1,36 @@
+
+<div id="patientDivId">
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+  <tr>
+    <td><%=t(:patient_id, :scope => :table)%></td>
+    <td><%=t(:registered_on, :scope => :table)%></td>
+    <td><%=t(:name, :scope => :table)%></td>
+    <td><%=t(:email_id, :scope => :table)%></td>
+    <td><%=t(:phone, :scope => :table)%></td>
+    <td><%=t(:date_of_birth, :scope => :table)%></td>
+  </tr>
+  </thead>
+  <% if patients == nil || patients.size == 0 %>
+      <tr>
+        <td colspan="6" style="text-align: center;">No records found.</td>
+      </tr>
+  <% else%>
+      <% patients.each do |patient|%>
+          <tr>
+            <td><%= patient.id%></td>
+            <td><%= patient.created_at_string%></td>
+            <td><%= link_to "#{patient.first_name} #{patient.last_name}", patient%></td>
+            <td><%= patient.email_id%></td>
+            <td><%= patient.phone%></td>
+            <td><%= patient.date_of_birth_string%></td>
+          </tr>
+      <% end %>
+  <% end %>
+
+</table>
+  <% if patients != nil && !patients.empty? %>
+    <%= will_paginate patients%>
+  <% end %>
+
+</div>

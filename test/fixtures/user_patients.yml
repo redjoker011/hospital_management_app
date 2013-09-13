@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  patient_id: 1
+  comments: MyText
+  amount: 1
+  comment_type_id: 1
+
+two:
+  user_id: 1
+  patient_id: 1
+  comments: MyText
+  amount: 1
+  comment_type_id: 1

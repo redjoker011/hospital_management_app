@@ -1,0 +1,10 @@
+$("#patientDivId").remove();
+$("#patientIndexId").html("<%=escape_javascript( render 'patients/patient', :patients => @patients)%>");
+$(".pagination").find("a").attr("data-remote", true);
+
+$(".pagination a").click(function(){
+    var page = this.href.split("&page=")[1];
+    $("#searchForm").append('<input type="hidden" name="page" value="'+page+'">');
+    $("#searchForm").submit();
+    return false;
+});

@@ -1,0 +1,29 @@
+<div id="tableId">
+  <h4>Patient history</h4>
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+  <td>Commented by</td>
+  <td>Created on</td>
+  <td>Comment Type</td>
+  <td>Comment</td>
+  <td>Amount charged</td>
+  <td></td>
+  </thead>
+  <% user_patients.each do |user_patient|%>
+  <tr>
+    <td><%= user_patient.user.first_name + " " + user_patient.user.last_name + " ("+user_patient.user.user_type.user_type_name+")"%></td>
+    <td><%= user_patient.created_at_string%></td>
+    <td><%= user_patient.comment_type.comment_type_name%></td>
+    <td id="comment<%=user_patient.id%>"><%= user_patient.comments_html %></td>
+    <td id="amt<%=user_patient.id%>"><%= user_patient.amount %></td>
+    <td><%= link_to 'edit',"/patients/#{user_patient.patient.id}/user_patients/#{user_patient.id}/edit",
+                    :data => {:toggle => "modal", :target => "#showDialog"}, :remote => true%></td>
+  </tr>
+  <% end %>
+</table>
+  <% if reportPage == true %>
+      <%= will_paginate user_patients%>
+  <% else %>
+      <%= will_paginate user_patients, :params => {:controller => "user_patients", :action => "fetch"}%>
+  <% end %>
+ </div>

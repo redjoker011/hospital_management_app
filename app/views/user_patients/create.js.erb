@@ -1,0 +1,12 @@
+
+<% if @flashMessage[:success] %>
+    $("#flashMessage").html('<div class="alert alert-success"><%= @flashMessage[:success] %></div>');
+<%else %>
+    $("#flashMessage").html('<div class="alert alert-error"><%= @flashMessage[:error] %></div>');
+<% end %>
+
+$("#showDialog").hide();
+$('.modal-backdrop').remove();
+$("#flashMessage").fadeOut(2500);
+
+location.reload();
