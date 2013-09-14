@@ -1,6 +1,6 @@
 class UserPatient < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
-  attr_accessible :amount, :comment_type_id, :comments, :patient_id, :user_id
+  attr_accessible :amount, :comment_type_id, :comments, :patient_id, :user_id, :archive
 
   belongs_to :user
   belongs_to :patient
@@ -15,6 +15,14 @@ class UserPatient < ActiveRecord::Base
   def comments_html
     if !created_at.blank? && created_at != nil
       simple_format(comments)
+    end
+  end
+
+  def isArchive?
+    if archive == SessionsHelper::ARCHIVE
+        return true
+    else
+        return false
     end
   end
 end

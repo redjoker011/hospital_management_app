@@ -16,7 +16,9 @@
                               :data => {:toggle => "modal", :target => "#showDialog"}, :remote => true%></li>
             </ul>
         </span>
-        <%= link_to 'Generate invoice', "/patients/#{@patient.id}/generate_invoice.pdf", :class => "btn", :style => "margin-left:5%;"%>
+        <% if @enableInvoiceGeneration > 0 %>
+            <%= link_to 'Generate invoice', "/patients/#{@patient.id}/generate_invoice.pdf", :id => "invoiceBtnId", :class => "btn", :style => "margin-left:5%;"%>
+        <% end %>
   </small>
 </h4>
 </div>

@@ -35,6 +35,12 @@ $(document).ready(function(){
     });
 
     $('#report_to_date').val(today);
+
+    $('#invoiceBtnId').click(function(){
+        $('#invoiceBtnId').hide();
+        $(".editCSS").html("archive");
+        $(".editCSS").replaceWith($(".editCSS").html());
+    });
 });
 
 function today(){

@@ -16,8 +16,14 @@
     <td><%= user_patient.comment_type.comment_type_name%></td>
     <td id="comment<%=user_patient.id%>"><%= user_patient.comments_html %></td>
     <td id="amt<%=user_patient.id%>"><%= user_patient.amount %></td>
-    <td><%= link_to 'edit',"/patients/#{user_patient.patient.id}/user_patients/#{user_patient.id}/edit",
-                    :data => {:toggle => "modal", :target => "#showDialog"}, :remote => true%></td>
+    <td>
+        <%if user_patient.isArchive? %>
+            archive
+        <% else %>
+            <%= link_to 'edit',"/patients/#{user_patient.patient.id}/user_patients/#{user_patient.id}/edit",
+                        :data => {:toggle => "modal", :target => "#showDialog"}, :class => "editCSS",:remote => true%>
+        <% end %>
+    </td>
   </tr>
   <% end %>
 </table>

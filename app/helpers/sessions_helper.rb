@@ -9,6 +9,7 @@ module SessionsHelper
   FOR_PATIENT = "FOR_PATIENT"
   FOR_STAFF = "FOR_STAFF"
   FOR_DOCTOR = "FOR_DOCTOR"
+  ARCHIVE = "A"
 
   def sign_in(user)
     session[:user_id] = [user.id, user.salt]

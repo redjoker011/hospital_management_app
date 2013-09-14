@@ -17,6 +17,7 @@ class PatientsController < ApplicationController
   def show
     @patient =Patient.find(params[:id])
     @user_patients = @patient.user_patients.reverse.paginate(:page => params[:page], :per_page => 5)
+    @enableInvoiceGeneration = @patient.user_patients.where("archive is not '"+SessionsHelper::ARCHIVE+"'").size
   end
 
   def index
@@ -66,10 +67,12 @@ class PatientsController < ApplicationController
 
   def generate_invoice
     @patient = Patient.find(params[:id])
+    @user_patients  = @patient.user_patients.where("archive is not '"+SessionsHelper::ARCHIVE+"'")
     respond_to do |format|
       format.html
       format.pdf do
-        pdf = HmsPdfDocument.new(SessionsHelper::FOR_PATIENT, @patient.user_patients, view_context)
+        pdf = HmsPdfDocument.new(SessionsHelper::FOR_PATIENT, @user_patients, view_context)
+        @user_patients.update_all :archive => SessionsHelper::ARCHIVE
         send_data pdf.render, filename: "invoice_summary_#{@patient.id}.pdf", type: "application/pdf"
       end
     end
