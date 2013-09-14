@@ -5,12 +5,13 @@ Hospital management system is a web based application which automates hospital m
 This application is built using ruby on rails 3, bootstrap, jquery, html, Sqlite etc. The features provided by the application are following,
 1. System access for entire staff of hospital, authentication and authorization for all the users.
 2. Patient registration and tracking their details in a database.
-3. Empowering doctors operating on a patient by providing them all the details like which other doctors and staff are working on
-a patient and the details of their treatment.
+3. Empowering doctors operating on a patient by providing them all the details like which other doctors and staff are working on a patient and the details of their treatment.
 4. Invoice generation.
 5. Reports based on staff performance.
 6. Export pdf documents of invoice and staff performance.
 7. Ajaxified interaction for quick access to the details.
+8. Internationalization supported (by default en)
+9. Archive patient records once they are discharged.
 
 To explore the application, by default one user will be created with admin priviledges such as, creating other users (doctors and staff).
 username and password of the default admin user are, "admin@hms.com" and "abc123" respectively.
