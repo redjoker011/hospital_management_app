@@ -17,7 +17,7 @@ class PatientsController < ApplicationController
   def show
     @patient =Patient.find(params[:id])
     @user_patients = @patient.user_patients.reverse.paginate(:page => params[:page], :per_page => 5)
-    @enableInvoiceGeneration = @patient.user_patients.where("archive is not '"+SessionsHelper::ARCHIVE+"'").size
+    @enableInvoiceGeneration = @patient.user_patients.where("archive != '"+SessionsHelper::ARCHIVE+"'").size
   end
 
   def index

@@ -40,10 +40,10 @@ ActiveRecord::Schema.define(:version => 20130914013108) do
     t.integer  "user_id"
     t.integer  "patient_id"
     t.text     "comments"
-    t.decimal  "amount",          :precision => 4, :scale => 20
+    t.decimal  "amount"
     t.integer  "comment_type_id"
-    t.datetime "created_at",                                     :null => false
-    t.datetime "updated_at",                                     :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.string   "archive"
   end
 

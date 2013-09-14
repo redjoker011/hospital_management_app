@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+#frozen-retreat-2220
 
 gem 'rails', '3.2.14'
 gem 'will_paginate', '3.0.pre4'
