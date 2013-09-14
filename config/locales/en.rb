@@ -65,7 +65,8 @@
                 :all_patients => "All patients",
                 :create_prescription => "Add prescription",
                 :search_patient => "Search Patient",
-                :reports => "Reports"
+                :reports => "Reports",
+                :user_details => "User details"
             },
             :table => {
                 :first_name => "First name",
