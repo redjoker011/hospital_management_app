@@ -2,7 +2,7 @@ Hospital Management System
 ===========================
 
 Hospital management system is a web based application which automates hospital management process, hence the name.
-This application is built using ruby on rails 3, bootstrap, jquery, html, Sqlite etc. The features provided by the application are following,
+This application is built using ruby on rails 3, bootstrap, jquery, html, Postgresql etc. The features provided by the application are following,
 1. System access for entire staff of hospital, authentication and authorization for all the users.
 2. Patient registration and tracking their details in a database.
 3. Empowering doctors operating on a patient by providing them all the details like which other doctors and staff are working on a patient and the details of their treatment.
