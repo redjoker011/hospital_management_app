@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'will_paginate', '3.0.pre2'
+gem 'will_paginate', '3.0.pre4'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 gem 'prawn', '0.12.0'
@@ -9,7 +9,7 @@ gem 'prawn', '0.12.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required

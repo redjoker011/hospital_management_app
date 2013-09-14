@@ -44,6 +44,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.8.0, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pdf-reader (v1.3.3, ruby-1.9.3-p231) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.16.0, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="prawn (v0.12.0, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.5, ruby-1.9.3-p231) [gem]" level="application" />
@@ -58,14 +59,13 @@
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.10, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.6, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, ruby-1.9.3-p231) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.8, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ttfunk (v1.0.3, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.37, ruby-1.9.3-p231) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.2.1, ruby-1.9.3-p231) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.pre2, ruby-1.9.3-p231) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.pre4, ruby-1.9.3-p231) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
