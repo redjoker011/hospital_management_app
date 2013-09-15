@@ -10,7 +10,7 @@ if(val == 'true'){
 $(".pagination").find("a").attr("data-remote", true);
 
 $(".pagination a").click(function(){
-    var page = this.href.split("&page=")[1];
+    var page = this.href.split("page=")[1];
     $("#reportsFormId").append('<input type="hidden" name="page" value="'+page+'">');
     $("#reportsFormId").submit();
     return false;
