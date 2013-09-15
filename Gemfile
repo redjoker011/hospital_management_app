@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 #frozen-retreat-2220
 
 gem 'rails', '3.2.14'
-gem 'will_paginate', '3.0.pre4'
+gem 'will_paginate', '3.0.4'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 gem 'prawn', '0.12.0'

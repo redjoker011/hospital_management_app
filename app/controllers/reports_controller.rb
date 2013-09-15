@@ -33,11 +33,9 @@ class ReportsController < ApplicationController
     if !sql.blank?
       if search_by_treatment_type != "0"
         sql += " and comment_type_id = :comment_type_id"
-        @user_patients = UserPatient.where(sql, {:user_id => search_by_user_id, :comment_type_id => search_by_treatment_type, :from_date => from_date, :to_date => to_date}).
-            paginate(:page => params[:page], :per_page => 5)
+        @user_patients = UserPatient.where(sql, {:user_id => search_by_user_id, :comment_type_id => search_by_treatment_type, :from_date => from_date, :to_date => to_date}).paginate(:page => params[:page], :per_page => 5)
       else
-        @user_patients = UserPatient.where(sql, {:user_id => search_by_user_id, :from_date => from_date, :to_date => to_date}).
-            paginate(:page => params[:page], :per_page => 5)
+        @user_patients = UserPatient.where(sql, {:user_id => search_by_user_id, :from_date => from_date, :to_date => to_date}).paginate(:page => params[:page], :per_page => 5)
       end
     end
   end
