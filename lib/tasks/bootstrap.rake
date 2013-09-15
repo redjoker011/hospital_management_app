@@ -1,3 +1,6 @@
+
+#First time setup utility, populates required static data in the database such as user_types, comment_types.
+#Creates default user with admin privileges. (username: admin@hms.com, password: abc123)
 namespace :bootstrap do
   desc "populate user types"
   task :user_types_data => :environment do

@@ -1,12 +1,15 @@
 class Patient < ActiveRecord::Base
   attr_accessible :date_of_birth, :email_id, :first_name, :last_name, :phone
 
+  #validations for the attributes of this entity.
   validates :date_of_birth, :presence => true
   validates :email_id, :presence => true, :format => {:with => SessionsHelper::EMAIL_REGEX}
   validates :first_name, :presence => true
   validates :last_name, :presence => true
   validates :phone, :presence => true
 
+  #User can treat many patients. similarly, patients can get treatment from many Users so many to many relation between Users and Patients
+  # is connected through intersection table user_patients.
   has_many :user_patients
   has_many :users, :through => :user_patients
 

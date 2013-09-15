@@ -3,17 +3,21 @@ class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessible :email_id, :first_name, :last_name, :user_type_id, :password, :password_confirmation
 
+  #validations for the attributes of this entity.
   validates :password, :presence => true, :confirmation => true, :length => {:within => 6..12}, :on => :create
   validates :email_id, :presence => true, :format => {:with => SessionsHelper::EMAIL_REGEX}
   validates :first_name, :presence => true
   validates :last_name, :presence => true
 
 
-
+  #establishing one-to-one relation with user_type (A user can be of only one role)
   belongs_to :user_type, :foreign_key => :user_type_id
 
+  #before save filter to encrypt password.
   before_save :encrypt_password
 
+  #User can treat many patients. similarly, patients can get treatment from many Users so many to many relation between Users and Patients
+  # is connected through intersection table user_patients.
   has_many :user_patients
   has_many :patients, :through => :user_patients
 
@@ -21,6 +25,7 @@ class User < ActiveRecord::Base
     encrypted_password == encrypt(submitted_password)
   end
 
+  #Utility method to authenticate user.
   def self.authenticate_with_salt(user_id)
     return nil if user_id == nil
     user = User.find(user_id[0])
@@ -37,6 +42,7 @@ class User < ActiveRecord::Base
   end
 
   private
+  #private method to encrypt password using SHA2 Digest.
   def encrypt_password
     if(password.blank?)
       return

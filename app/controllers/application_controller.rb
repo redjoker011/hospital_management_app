@@ -4,10 +4,13 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_cache_buster
 
+  #internationation setting for locale
   def default_url_options(options = {})
     options.merge!({ :locale => I18n.locale })
   end
 
+  #Method to clear cache, so that once user has logged out and hits back button,
+  #he will be prompted for login credentials.
   def set_cache_buster
     response.headers["Cache-Control"] = "no-cache, no-store, max-age=0, must-revalidate"
     response.headers["Pragma"] = "no-cache"
