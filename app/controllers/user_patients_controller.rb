@@ -42,7 +42,6 @@ class UserPatientsController < ApplicationController
   def fetch
     @patient = Patient.find(params[:id])
     @user_patients = @patient.user_patients.reverse.paginate(:page => params[:page], :per_page => 5)
-    puts @user_patients.first.amount
     respond_to do |format|
        format.js
       format.html
