@@ -44,7 +44,7 @@ describe UserPatientsController do
       params = {:amount => 100, :comment_type_id => 1, :comments => "abc abc abc", :user_id => @user.id, :patient_id => @patient.id}
       lambda do
         xhr :post, :create, :id => @patient, :user_patient => params
-      end.should change(UserPatient, :count)
+      end.should change(UserPatient, :count).by(1)
     end
 
   end
