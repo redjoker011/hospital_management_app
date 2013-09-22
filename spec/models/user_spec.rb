@@ -41,7 +41,7 @@ describe User do
     test_user.should_not be_valid
   end
 
-  it ":password and password_confirmation must match" do
+  it ": password and password_confirmation must match" do
     test_user = User.new(@user_attributes.merge({:password => "abc1234", :password_confirmation => "xyz1234"}))
     test_user.should_not be_valid
   end
@@ -51,5 +51,33 @@ describe User do
     test_user.should_not be_valid
   end
 
+  describe "Authentication" do
+    before(:each) do
+      @user = User.create!(@user_attributes)
+    end
 
+    it ": must authenticate user by email_id and password" do
+      User.authenticate("jason@hms.com", "abc123").should == @user
+    end
+
+    it ": must reject if password or email_id is wrong" do
+      User.authenticate("jason@hms.com", "xyz123").should be_nil
+    end
+  end
+
+  describe "Test associations" do
+    before(:each) do
+      @user = User.create!(@user_attributes)
+      @user_patient1 = Factory(:user_patient, :comments => "abc abc abc", :user => @user)
+      @user_patient2 = Factory(:user_patient, :comments => "test test test", :user => @user)
+    end
+
+    it ": must have associated user_patient objects" do
+      @user.user_patients.size.should == 2
+    end
+
+    it ": must describe the type of user" do
+     @user.user_type.user_type_name.should eql "ADMIN"
+    end
+  end
 end

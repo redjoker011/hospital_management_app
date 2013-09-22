@@ -69,8 +69,8 @@
     <file path="/patients_controller_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379832389259" ignored="false" />
     <file path="/user_patients_controller_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379846590256" ignored="false" />
     <file path="/reports_controller_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379850587844" ignored="false" />
-    <file path="/user_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379852115220" ignored="false" />
-    <file path="/patient_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379850866221" ignored="false" />
+    <file path="/user_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379854176389" ignored="false" />
+    <file path="/patient_spec.rb" changelist="44e52b73-1849-4654-b572-fc22711936ca" time="1379854906410" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,25 +93,43 @@
       <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="3" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
+            <state line="81" column="9" selection-start="1959" selection-end="2471" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patient_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="patient_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/patient_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+            <state line="51" column="51" selection-start="1483" selection-end="1483" vertical-scroll-proportion="2.251948">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="patient.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="45" selection-start="681" selection-end="694" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="67" selection-start="130" selection-end="142" vertical-scroll-proportion="-0.5080645">
+            <state line="21" column="20" selection-start="971" selection-end="979" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="factories.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factories.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="50" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,8 +159,8 @@
         <option value="$PROJECT_DIR$/app/controllers/user_patients_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/user_patients_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/patient_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/patient_spec.rb" />
       </list>
     </option>
   </component>
@@ -200,38 +218,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hosp_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hospital_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hosp_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hospital_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hosp_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="681" selection-end="694" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/patients_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="12" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.0">
@@ -653,13 +632,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/user_patient.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="53" selection-start="81" selection-end="169" vertical-scroll-proportion="0.093406595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="421" selection-end="433" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -706,23 +678,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/patient_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+        <state line="21" column="20" selection-start="971" selection-end="979" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="50" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="3" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
+        <state line="81" column="9" selection-start="1959" selection-end="2471" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="67" selection-start="130" selection-end="142" vertical-scroll-proportion="-0.5080645">
+        <state line="13" column="45" selection-start="681" selection-end="694" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/patient_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="51" selection-start="1483" selection-end="1483" vertical-scroll-proportion="2.251948">
           <folding />
         </state>
       </provider>
