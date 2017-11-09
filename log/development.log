@@ -364,3 +364,132 @@ Completed 200 OK in 3302ms (Views: 2891.2ms)
 
 Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 13:08:41 +0800
 Started GET "/assets/hms.jpg" for 127.0.0.1 at 2017-11-09 13:08:41 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 21:18:55 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (66.5ms)
+  Rendered layouts/_header.html.erb (41.6ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 903ms (Views: 676.9ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started GET "/assets/hms.jpg" for 127.0.0.1 at 2017-11-09 21:18:56 +0800
+Started POST "/en/sessions" for 127.0.0.1 at 2017-11-09 21:21:41 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CYoKPEcXUy74q4h5+Ue0oo+Oj4grTOOoPSpDFGlXIHUSl9mtOOr9vmeQfh15+s9nfsk8ZEGznkhKnfjZamLpyQ==", "session"=>{"email_id"=>"", "password"=>"[FILTERED]"}, "commit"=>"login", "locale"=>"en"}
+Completed 500 Internal Server Error in 12ms
+
+
+  
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+app/models/user.rb:36:in `authenticate'
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/en/sessions" for 127.0.0.1 at 2017-11-09 21:22:56 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CYoKPEcXUy74q4h5+Ue0oo+Oj4grTOOoPSpDFGlXIHUSl9mtOOr9vmeQfh15+s9nfsk8ZEGznkhKnfjZamLpyQ==", "session"=>{"email_id"=>"", "password"=>"[FILTERED]"}, "commit"=>"login", "locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+
+  
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+app/models/user.rb:36:in `authenticate'
+app/controllers/sessions_controller.rb:12:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-09 21:22:59 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 68.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-09 21:23:01 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 46.4ms)
+
+
+Started GET "/assets/hms.jpg" for 127.0.0.1 at 2017-11-09 21:23:01 +0800
+Started GET "/reports" for 127.0.0.1 at 2017-11-09 21:24:10 +0800
+Processing by ReportsController#reports as HTML
+Redirected to http://localhost:3000/en/login
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 301ms
+
+
+Started GET "/en/login" for 127.0.0.1 at 2017-11-09 21:24:11 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/en/login"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/en/login" for 127.0.0.1 at 2017-11-09 21:24:33 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/en/login"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
