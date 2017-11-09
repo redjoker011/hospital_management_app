@@ -1468,3 +1468,367 @@ Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:04:25 +0800
 Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:04:25 +0800
 Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:04:25 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:05:12 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.5ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:05:13 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 52.3ms)
+
+
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:47 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.7ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:50 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 55.7ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:06:51 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:07:53 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 47.5ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:54 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 38.6ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:55 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 38.4ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/sessions.self-e38c951152590c463cf79043646607e7942ac602740bf9700980681f26ec1514.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:07:56 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:11:21 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1452ms (Views: 1451.2ms)
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/sessions.self-a42207949928b9baae11641593b6fb01c87fb21479ea3c85691d4d396e94186f.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:22 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.0ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/sessions.self-a42207949928b9baae11641593b6fb01c87fb21479ea3c85691d4d396e94186f.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:25 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/sessions.self-a42207949928b9baae11641593b6fb01c87fb21479ea3c85691d4d396e94186f.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:11:26 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.6ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/sessions.self-a42207949928b9baae11641593b6fb01c87fb21479ea3c85691d4d396e94186f.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:03 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:04 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.5ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/sessions.self-a42207949928b9baae11641593b6fb01c87fb21479ea3c85691d4d396e94186f.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:12:40 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.1ms)
+
+
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/sessions.self-a42207949928b9baae11641593b6fb01c87fb21479ea3c85691d4d396e94186f.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 22:13:11 +0800
