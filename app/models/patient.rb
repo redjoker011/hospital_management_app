@@ -1,5 +1,4 @@
 class Patient < ActiveRecord::Base
-  attr_accessor :date_of_birth, :email_id, :first_name, :last_name, :phone
 
   #validations for the attributes of this entity.
   validates :date_of_birth, :presence => true

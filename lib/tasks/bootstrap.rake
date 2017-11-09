@@ -19,7 +19,7 @@ namespace :bootstrap do
   desc "Create the default user admin"
   task :default_user => :environment do
     ut = UserType.find_by_user_type_name("ADMIN")
-    User.create( :first_name => "Prashant", :last_name => "Jadhav", :password => "abc123",
+    User.create( :first_name => "Admin", :last_name => "Admin", :password => "abc123",
                  :password_confirmation => "abc123", :email_id => "admin@hms.com", :user_type_id => ut.id)
   end
 

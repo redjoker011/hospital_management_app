@@ -1,7 +1,6 @@
 require 'digest'
 class User < ActiveRecord::Base
-  attr_accessor :password
-  attr_accessor :email_id, :first_name, :last_name, :user_type_id, :password, :password_confirmation
+  attr_accessor :password, :password_confirmation
 
   #validations for the attributes of this entity.
   validates :password, :presence => true, :confirmation => true, :length => {:within => 6..12}, :on => :create
