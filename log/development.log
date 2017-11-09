@@ -1,0 +1,366 @@
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from env_config at /home/peter/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:247)
+Started GET "/" for 127.0.0.1 at 2017-11-09 12:47:37 +0800
+Processing by SessionsController#login as HTML
+Completed 500 Internal Server Error in 307ms
+
+
+  
+NoMethodError (undefined method `whitelist_attributes=' for ActiveRecord::Base:Class):
+  
+activerecord (5.1.4) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+activerecord (5.1.4) lib/active_record/railtie.rb:112:in `block (3 levels) in <class:Railtie>'
+activerecord (5.1.4) lib/active_record/railtie.rb:111:in `each'
+activerecord (5.1.4) lib/active_record/railtie.rb:111:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.4) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.4) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-09 12:54:23 +0800
+Processing by SessionsController#login as HTML
+Completed 500 Internal Server Error in 171ms
+
+
+  
+NoMethodError (undefined method `whitelist_attributes=' for ActiveRecord::Base:Class):
+  
+activerecord (5.1.4) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+activerecord (5.1.4) lib/active_record/railtie.rb:112:in `block (3 levels) in <class:Railtie>'
+activerecord (5.1.4) lib/active_record/railtie.rb:111:in `each'
+activerecord (5.1.4) lib/active_record/railtie.rb:111:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.4) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.4) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-09 12:58:44 +0800
+Processing by SessionsController#login as HTML
+Completed 500 Internal Server Error in 191ms
+
+
+  
+NoMethodError (undefined method `mass_assignment_sanitizer=' for ActiveRecord::Base:Class):
+  
+activerecord (5.1.4) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+activerecord (5.1.4) lib/active_record/railtie.rb:112:in `block (3 levels) in <class:Railtie>'
+activerecord (5.1.4) lib/active_record/railtie.rb:111:in `each'
+activerecord (5.1.4) lib/active_record/railtie.rb:111:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.4) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.4) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/peter/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-09 13:00:45 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (67.9ms)
+Completed 500 Internal Server Error in 7010ms
+
+
+  
+ActionView::Template::Error ("#error_explanation" failed to @extend ".alert-error".
+The selector ".alert-error" was not found.
+Use "@extend .alert-error !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title><%= t(:main_title, :scope => :widget_names)%></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  
+app/assets/stylesheets/custom.css.scss:9
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4405349057922311140_47068488676460'
+Started GET "/" for 127.0.0.1 at 2017-11-09 13:02:14 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 1850ms
+
+
+  
+ActionView::Template::Error (".field_with_errors" failed to @extend ".control-group.error".
+The selector ".control-group.error" was not found.
+Use "@extend .control-group.error !optional" if the extend should be able to fail.
+):
+    2: <html>
+    3: <head>
+    4:   <title><%= t(:main_title, :scope => :widget_names)%></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  
+app/assets/stylesheets/custom.css.scss:14
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4405349057922311140_70038229631300'
+Started GET "/" for 127.0.0.1 at 2017-11-09 13:03:14 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (36.6ms)
+Completed 500 Internal Server Error in 4523ms
+
+
+  
+ActionView::Template::Error (undefined method `attr_accessible' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  attr_accessor):
+    3:     <div style="background-color: khaki">
+    4:          <img src="/assets/hms.jpg" class="logo"/>
+    5:          <b style="font-size:30px;padding-left: 40px;"><%= t(:product_name, :scope => :widget_names)%></b>
+    6:       <% if has_signed? == true && @page_name != SessionsHelper::LOGIN%>
+    7:          <%= link_to t(:sign_out_name, :scope => :widget_names), (sign_out_path), :style=>"padding-left: 15%;"%>
+    8:       <% end %>
+    9:     </div>
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:2:in `<top (required)>'
+app/helpers/sessions_helper.rb:69:in `remember_from_session'
+app/helpers/sessions_helper.rb:37:in `current_user'
+app/helpers/sessions_helper.rb:29:in `has_signed?'
+app/views/layouts/_header.html.erb:6:in `_app_views_layouts__header_html_erb___2388550089879326703_70038218856500'
+app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___4405349057922311140_70038230279580'
+Started GET "/" for 127.0.0.1 at 2017-11-09 13:04:43 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (644.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 746ms (Views: 744.6ms)
+
+
+Started GET "/assets/application.self-c2edd87b31656705c229c4f204be4ca29e5e47e5cd9362051e1e19523b375fbb.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/assets/hms.jpg" for 127.0.0.1 at 2017-11-09 13:04:44 +0800
+Started GET "/" for 127.0.0.1 at 2017-11-09 13:08:37 +0800
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (35.2ms)
+  Rendered layouts/_header.html.erb (14.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 3302ms (Views: 2891.2ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-09 13:08:41 +0800
+Started GET "/assets/hms.jpg" for 127.0.0.1 at 2017-11-09 13:08:41 +0800
