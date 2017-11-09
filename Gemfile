@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 #frozen-retreat-2220
 
-gem 'rails', '3.2.14'
-gem 'will_paginate', '3.0.4'
-gem 'bootstrap-sass', '2.3.2.0'
+gem 'rails'
+gem 'will_paginate'
+gem 'bootstrap-sass'
 gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 gem 'prawn', '0.12.0'
 gem 'rspec-rails'
@@ -19,13 +19,13 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
