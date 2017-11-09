@@ -10,12 +10,12 @@ class ReportsController < ApplicationController
   # it pre-populates required data on the reports page such as users,
   # comment types - by calling private method pre_populate_reports
   def reports
-    @user_type = UserType.find_by_user_type_name(params[:type])
+    @user_type = UserType.find_by(user_type_name: params[:type])
     if @user_type.user_type_name == SessionsHelper::STAFF
       @user_type_admin = UserType.find_by_user_type_name(SessionsHelper::ADMIN)
       @users = User.where("user_type_id = ? or user_type_id = ?", @user_type.id, @user_type_admin.id)
     else
-      @users = User.find_all_by_user_type_id(@user_type.id)
+      @users = User.where(user_type_id: @user_type.id)
     end
     pre_populate_reports
     @type = params[:type]

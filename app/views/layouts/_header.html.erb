@@ -1,17 +1,14 @@
 <header>
 <div class="container">
-    <div style="background-color: khaki; text-align: center">
-         <b style="font-size:30px;padding-left: 40px;"><%= t(:product_name, :scope => :widget_names)%></b>
-      <% if has_signed? == true && @page_name != SessionsHelper::LOGIN%>
-         <%= link_to t(:sign_out_name, :scope => :widget_names), (sign_out_path), :style=>"padding-left: 15%;"%>
-      <% end %>
-    </div>
-
+  <div style="background-color: khaki; text-align: center">
+        <b style="font-size:30px;padding-left: 40px;"><%= t(:product_name, :scope => :widget_names)%></b>
+  </div>
+  <br/>
   <% if has_signed? == true && @page_name != SessionsHelper::LOGIN%>
     <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <ul class="nav">
+      <div class="navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><%= t(:profile, :scope => :widget_names)%> <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -48,6 +45,11 @@
                 <% end %>
               </ul>
             </li>
+            <% if has_signed? == true && @page_name != SessionsHelper::LOGIN%>
+              <li class="dropdown">
+                <%= link_to t(:sign_out_name, :scope => :widget_names), (sign_out_path) %>
+              </li>
+            <% end %>
           </ul>
         </div>
       </div>

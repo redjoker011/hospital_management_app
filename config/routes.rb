@@ -33,9 +33,9 @@ HospitalApp::Application.routes.draw do
 
     get '/fetchReportsPdf', :to => "reports#fetch_reports_download"
 
-    post '/login', :to => 'sessions#login'
+    get '/login', :to => 'sessions#login'
 
-    post '/sign_out', :to => 'sessions#destroy'
+    get '/sign_out', :to => 'sessions#destroy'
 
     get '/searchPatients', :to => 'patients#searchPatients'
 
