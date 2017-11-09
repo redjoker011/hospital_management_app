@@ -1,35 +1,39 @@
 <h4><%=t(:create_patient, :scope => :topics)%></h4>
-<div class="row-fluid">
-  <%= form_for @patient, :html => {:class => "form well"} do |p|%>
-      <%= render 'common/error_messages', :object => p.object %>
-      <div class="row-fluid">
-        <div class="control-group span6">
-          <%=p.label t(:first_name_label, :scope => :widget_names)%>
-          <%=p.text_field :first_name%>
-        </div>
-        <div class="control-group span6">
-          <%=p.label t(:last_name_label, :scope => :widget_names)%>
-          <%=p.text_field :last_name%>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="control-group span6">
-          <%=p.label t(:email_id_label, :scope => :widget_names)%>
-          <%=p.text_field :email_id%>
-        </div>
-        <div class="control-group span6">
-          <%=p.label t(:phone_label, :scope => :widget_names)%>
-          <%=p.text_field :phone%>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="control-group span6">
-          <%=p.label t(:date_of_birth_label, :scope => :widget_names)%>
-          <%=p.text_field :date_of_birth%>
-        </div>
-        <div class="control-group span6">
-          <%=p.submit t(:create_patient, :scope => :widget_names), :class => "btn btn-primary"%>
-        </div>
-      </div>
-  <% end %>
+<div class="row">
+  <div class="cols-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 columns">
+    <div class="row-fluid">
+      <%= form_for @patient, :html => {:class => "form well"} do |p|%>
+          <%= render 'common/error_messages', :object => p.object %>
+          <div class="row-fluid">
+            <div class="form-group span6">
+              <%=p.label t(:first_name_label, :scope => :widget_names)%>
+              <%=p.text_field :first_name, class: "form-control"%>
+            </div>
+            <div class="form-group span6">
+              <%=p.label t(:last_name_label, :scope => :widget_names)%>
+              <%=p.text_field :last_name, class: "form-control"%>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="form-group span6">
+              <%=p.label t(:email_id_label, :scope => :widget_names)%>
+              <%=p.text_field :email_id, class: "form-control"%>
+            </div>
+            <div class="form-group span6">
+              <%=p.label t(:phone_label, :scope => :widget_names)%>
+              <%=p.text_field :phone, class: "form-control"%>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="form-group span6">
+              <%=p.label t(:date_of_birth_label, :scope => :widget_names)%>
+              <%=p.text_field :date_of_birth, class: "form-control"%>
+            </div>
+            <div class="form-group span6">
+              <%=p.submit t(:create_patient, :scope => :widget_names), :class => "btn btn-primary btn-small"%>
+            </div>
+          </div>
+      <% end %>
+    </div>
+  </div>
 </div>
