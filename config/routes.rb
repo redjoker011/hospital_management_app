@@ -21,7 +21,7 @@ HospitalApp::Application.routes.draw do
       end
     end
 
-    # root :to => "sessions#login"
+    root :to => "sessions#login"
 
     get '/reports', :to => "reports#reports"
 

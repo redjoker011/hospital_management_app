@@ -13,7 +13,7 @@
                 :users => "Users",
                 :patients => "Patients",
                 :main_title => "Hospital Management System" ,
-                :footer_text => "Developed by: Prashant Jadhav, © 2013",
+                :footer_text => "For Demo Purpose Only",
                 :login_btn => "login",
                 :go_btn => "Go",
                 :update_btn => "Update",

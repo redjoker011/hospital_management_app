@@ -1,7 +1,6 @@
 <header>
 <div class="container">
-    <div style="background-color: khaki">
-         <img src="/assets/hms.jpg" class="logo"/>
+    <div style="background-color: khaki; text-align: center">
          <b style="font-size:30px;padding-left: 40px;"><%= t(:product_name, :scope => :widget_names)%></b>
       <% if has_signed? == true && @page_name != SessionsHelper::LOGIN%>
          <%= link_to t(:sign_out_name, :scope => :widget_names), (sign_out_path), :style=>"padding-left: 15%;"%>
