@@ -1,6 +1,6 @@
 #Controller to monitor user treatment records such as prescription/medicines/surgeries.
 class UserPatientsController < ApplicationController
-  before_filter :authenticate
+  before_action :authenticate
 
   #Action to render add prescription/medicines/surgery page in a dialog box through Ajax.
   # The page is rendered by new.js.erb, where doctor can enter prescription or surgery information for a patient.

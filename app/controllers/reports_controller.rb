@@ -3,8 +3,8 @@
 class ReportsController < ApplicationController
 
   #Enable authentication for this page by using SessionsHelper's authenticate and authenticate_admin.
-  before_filter :authenticate
-  before_filter :authenticate_admin, :only => [:reports]
+  before_action :authenticate
+  before_action :authenticate_admin, :only => [:reports]
 
   #Action to render reports default page for the admin user,
   # it pre-populates required data on the reports page such as users,

@@ -1,7 +1,7 @@
 #Controller responsible for monitoring all patient related activities.
 
 class PatientsController < ApplicationController
-  before_filter :authenticate
+  before_action :authenticate
 
   #Action method to show create page with empty patient object initialized.
   def new
