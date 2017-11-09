@@ -1,6 +1,6 @@
 class UserPatient < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
-  attr_accessible :amount, :comment_type_id, :comments, :patient_id, :user_id, :archive
+  attr_accessor :amount, :comment_type_id, :comments, :patient_id, :user_id, :archive
 
   belongs_to :user
   belongs_to :patient
