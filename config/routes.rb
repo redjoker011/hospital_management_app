@@ -23,24 +23,24 @@ HospitalApp::Application.routes.draw do
 
     root :to => "sessions#login"
 
-    match '/reports', :to => "reports#reports"
+    get '/reports', :to => "reports#reports"
 
-    match '/my_reports', :to => "reports#my_reports"
+    get '/my_reports', :to => "reports#my_reports"
 
-    match '/fetchReports', :to => "reports#fetch_reports"
+    get '/fetchReports', :to => "reports#fetch_reports"
 
-    match '/fetch_my_reports', :to => "reports#fetch_my_reports"
+    get '/fetch_my_reports', :to => "reports#fetch_my_reports"
 
-    match '/fetchReportsPdf', :to => "reports#fetch_reports_download"
+    get '/fetchReportsPdf', :to => "reports#fetch_reports_download"
 
-    match '/login', :to => 'sessions#login'
+    post '/login', :to => 'sessions#login'
 
-    match '/sign_out', :to => 'sessions#destroy'
+    post '/sign_out', :to => 'sessions#destroy'
 
-    match '/searchPatients', :to => 'patients#searchPatients'
+    get '/searchPatients', :to => 'patients#searchPatients'
 
-    match '/search', :to => 'patients#search'
+    get '/search', :to => 'patients#search'
 
-    match '/downloadPdf', :to => 'patients#downloadPdf'
+    post '/downloadPdf', :to => 'patients#downloadPdf'
   end
 end
