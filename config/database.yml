@@ -4,21 +4,15 @@ development:
   encoding: unicode
   database: hospital_app_development
   pool: 5
-  username: postgres
-  password: abc123
 
 test:
   adapter: postgresql
   encoding: unicode
   database: hospital_app_test
   pool: 5
-  username: postgres
-  password: abc123
 
 production:
   adapter: postgresql
   encoding: unicode
   database: hospital_app_production
   pool: 5
-  username: postgres
-  password: abc123
