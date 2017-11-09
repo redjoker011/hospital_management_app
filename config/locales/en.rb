@@ -3,7 +3,7 @@
         {
             :widget_names => {
                 :product_name => "Hospital Management System",
-                :sign_out_name => "Sign out",
+                :sign_out_name => "Sign Out",
                 :view => "View",
                 :edit => "Edit",
                 :change_password => "Change password",
