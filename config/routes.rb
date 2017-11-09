@@ -5,7 +5,7 @@ HospitalApp::Application.routes.draw do
     resources :users do
       member do
         get :change_password
-        put :update_password
+        patch :update_password
       end
     end
 
