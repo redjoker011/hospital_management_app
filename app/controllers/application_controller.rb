@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
 
-  before_filter :set_cache_buster
+  before_action :set_cache_buster
 
   #internationation setting for locale
   def default_url_options(options = {})
