@@ -10,7 +10,7 @@ class PatientsController < ApplicationController
 
   #Action to save the patient object as per data entered on the new page.
   def create
-    @patient = Patient.create(params[:patient])
+    @patient = Patient.new(patient_params)
     if @patient.save
       redirect_to @patient, :flash => {:success => t(:create_patient, :scope => :messages)}
     else
@@ -88,5 +88,9 @@ class PatientsController < ApplicationController
         send_data pdf.render, filename: "invoice_summary_#{@patient.id}.pdf", type: "application/pdf"
       end
     end
+  end
+
+  def patient_params
+    params.require(:patient).permit(:first_name, :last_name, :date_of_birth, :phone, :email_id)
   end
 end

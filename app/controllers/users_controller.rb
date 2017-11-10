@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
   #Action to create new user based on the credentials supplied by new page.
   def create
-    @user = User.create(params[:user])
+    @user = User.new(user_params)
     if @user.save
       redirect_to @user, :flash => {:success => t(:create_user, :scope => :messages)}
     else
@@ -63,7 +63,7 @@ class UsersController < ApplicationController
   #Action to update edited personal information of user in database.
   def update
      @user = User.find(params[:id])
-     if @user.update_attributes(params[:user])
+     if @user.update(user_params)
       redirect_to @user, :flash => {:success => t(:updated, :scope => :messages)}
      else
        getUserTypes
@@ -77,5 +77,9 @@ class UsersController < ApplicationController
   #private method to pre-populate different types of users such as ADMIN, DOCTOR, STAFF.
   def getUserTypes
     @user_types = UserType.all.map {|ut| [ut.user_type_name, ut.id]}
+  end
+
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email_id, :user_type_id, :password, :password_confirmation)
   end
 end
