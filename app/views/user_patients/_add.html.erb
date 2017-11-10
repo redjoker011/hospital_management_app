@@ -2,15 +2,15 @@
   <%= form_for @user_patient, :url => {:controller => :user_patients, :action => :create}, :remote => true, :html => {:class => "form well"} do |up|%>
       <%= render 'common/error_messages', :object => up.object %>
       <div class="row-fluid">
-        <div class="control-group span6">
+        <div class="form-group span6">
           <%=up.label t(:comments_label, :scope => :widget_names)%>
-          <%=up.text_area :comments, :rows => 8, :class => "input-xxlarge"%>
+          <%=up.text_area :comments, :rows => 8, :class => "input-xxlarge form-control"%>
         </div>
       </div>
       <div class="row-fluid">
-        <div class="control-group span6">
+        <div class="form-group span6">
           <%=up.label t(:amount_label, :scope => :widget_names)%>
-          <%=up.text_field :amount%>
+          <%=up.text_field :amount, type: "number", class: "form-control"%>
         </div>
       </div>
       <div style="display:none;">
@@ -19,8 +19,8 @@
         <%= up.hidden_field :comment_type_id%>
       </div>
       <div class="row-fluid">
-        <div class="control-group span6">
-          <%=up.submit t(:add, :scope => :widget_names), :class => "btn btn-primary"%>
+        <div class="form-group span6">
+          <%=up.submit t(:add, :scope => :widget_names), :class => "btn btn-primary btn-small"%>
         </div>
       </div>
   <% end %>

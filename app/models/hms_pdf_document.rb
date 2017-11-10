@@ -18,8 +18,8 @@ class HmsPdfDocument < Prawn::Document
   end
 
   def include_logo
-    logo_path =  "#{Rails.root}/app/assets/images/hms.jpg"
-    image logo_path, :width => 241, :height => 75
+    # logo_path =  "#{Rails.root}/app/assets/images/hms.jpg"
+    # image logo_path, :width => 241, :height => 75
   end
 
   def include_patient_data
