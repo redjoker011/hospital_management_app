@@ -18,7 +18,7 @@
         </span>
 
         <% if @enableInvoice > 0 %>
-            <%= link_to 'Generate invoice', "/patients/#{@patient.id}/generate_invoice.pdf", :id => "invoiceBtnId", :class => "btn", :style => "margin-left:5%;"%>
+            <%= link_to 'Generate invoice', "/patients/#{@patient.id}/generate_invoice.pdf", :id => "invoiceBtnId", :class => "btn btn-info", :style => "margin-left:5%;"%>
         <% end %>
   </small>
 </h4>

@@ -7476,3 +7476,250 @@ Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:07:16 +0800
 Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:07:16 +0800
 Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-10 11:07:16 +0800
+Started GET "/patients/1/user_patients/new?type=1" for 127.0.0.1 at 2017-11-10 11:08:42 +0800
+Processing by UserPatientsController#new as JS
+  Parameters: {"type"=>"1", "id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPatient Load (0.8ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering user_patients/new.js.erb
+  Rendered common/_error_messages.html.erb (0.9ms)
+  Rendered user_patients/_add.html.erb (9.4ms)
+  Rendered user_patients/new.js.erb (14.1ms)
+Completed 200 OK in 41ms (Views: 23.5ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/en/patients/1/user_patients" for 127.0.0.1 at 2017-11-10 11:08:48 +0800
+Processing by UserPatientsController#create as JS
+  Parameters: {"utf8"=>"✓", "user_patient"=>{"comments"=>"asdsad", "amount"=>"255", "patient_id"=>"1", "user_id"=>"1", "comment_type_id"=>"1"}, "commit"=>"Add", "locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "user_patients" ("user_id", "patient_id", "comments", "amount", "comment_type_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["user_id", 1], ["patient_id", 1], ["comments", "asdsad"], ["amount", "255.0"], ["comment_type_id", 1], ["created_at", "2017-11-10 03:08:48.237078"], ["updated_at", "2017-11-10 03:08:48.237078"]]
+  [1m[35m (728.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_patients/create.js.erb
+  Rendered user_patients/create.js.erb (1.3ms)
+Completed 200 OK in 744ms (Views: 6.2ms | ActiveRecord: 729.5ms)
+
+
+Started GET "/en/patients/1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Processing by PatientsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPatient Load (0.3ms)[0m  [1m[34mSELECT "user_patients".* FROM "user_patients" WHERE "user_patients"."patient_id" = $1[0m  [["patient_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_patients" WHERE "user_patients"."patient_id" = $1 AND (archive is null)[0m  [["patient_id", 1]]
+  Rendering patients/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserType Load (0.5ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.8ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.5ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (1.1ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.1ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered user_patients/_user_patient.html.erb (45.2ms)
+  Rendered patients/show.html.erb within layouts/application (52.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (10.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 156ms (Views: 142.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/sessions.self-04963ffe0ec78fd7504000942aae35aecbb85c8c7692b6539be66d7d6e07f094.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-10 11:08:49 +0800
+Started GET "/en/patients/1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Processing by PatientsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPatient Load (0.5ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPatient Load (0.5ms)[0m  [1m[34mSELECT "user_patients".* FROM "user_patients" WHERE "user_patients"."patient_id" = $1[0m  [["patient_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_patients" WHERE "user_patients"."patient_id" = $1 AND (archive is null)[0m  [["patient_id", 1]]
+  Rendering patients/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserType Load (0.5ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (1.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.4ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.1ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (1.9ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered user_patients/_user_patient.html.erb (38.3ms)
+  Rendered patients/show.html.erb within layouts/application (46.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (10.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 144ms (Views: 129.0ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/sessions.self-04963ffe0ec78fd7504000942aae35aecbb85c8c7692b6539be66d7d6e07f094.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:50 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:51 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:51 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:51 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:51 +0800
+Started GET "/en/patients/1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Processing by PatientsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPatient Load (1.4ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPatient Load (0.6ms)[0m  [1m[34mSELECT "user_patients".* FROM "user_patients" WHERE "user_patients"."patient_id" = $1[0m  [["patient_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_patients" WHERE "user_patients"."patient_id" = $1 AND (archive is null)[0m  [["patient_id", 1]]
+  Rendering patients/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserType Load (0.4ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.7ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.9ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.9ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.1ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered user_patients/_user_patient.html.erb (45.5ms)
+  Rendered patients/show.html.erb within layouts/application (52.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (14.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 150ms (Views: 135.0ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/sessions.self-04963ffe0ec78fd7504000942aae35aecbb85c8c7692b6539be66d7d6e07f094.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-10 11:10:53 +0800
+Started GET "/en/patients/1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Processing by PatientsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPatient Load (0.5ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserPatient Load (0.8ms)[0m  [1m[34mSELECT "user_patients".* FROM "user_patients" WHERE "user_patients"."patient_id" = $1[0m  [["patient_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "user_patients" WHERE "user_patients"."patient_id" = $1 AND (archive is null)[0m  [["patient_id", 1]]
+  Rendering patients/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserType Load (0.6ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.6ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (1.2ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.0ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCommentType Load (0.9ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.1ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE CommentType Load (0.1ms)[0m  [1m[34mSELECT  "comment_types".* FROM "comment_types" WHERE "comment_types"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered user_patients/_user_patient.html.erb (39.0ms)
+  Rendered patients/show.html.erb within layouts/application (42.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE UserType Load (0.0ms)[0m  [1m[34mSELECT  "user_types".* FROM "user_types" WHERE "user_types"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (9.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 109.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.self-2ba027b83710cb40225a16ecadb4e111abcfbb6cb45d3285db870a4b3e977985.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/custom.self-b614eb86c8f5439094388c9eb922c7a8a692cbea71c58dcc006936cd0b0f2503.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/sessions.self-04963ffe0ec78fd7504000942aae35aecbb85c8c7692b6539be66d7d6e07f094.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/user_patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/bootstrap-datepicker.self-ab48ce0661164f47c897194f911a912ac32e6a946d8c8cf2e1aefaba75b4d2e0.css?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/bootstrap-datepicker/core.self-f8479279ecedfec7bfbbd32e160351702014b4a906ef590fb2eba18fa1aed029.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/user_patients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
+Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-10 11:17:04 +0800
