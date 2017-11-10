@@ -5707,3 +5707,71 @@ Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-10 09:58:27 +0800
 Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-10 09:58:27 +0800
 Started GET "/assets/application.self-ddd2ddd653647a2c652d31cc8fad1e3f14c76ba16f83492ad75e26037223e5df.js?body=1" for 127.0.0.1 at 2017-11-10 09:58:27 +0800
+  [1m[35m (234.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (194.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (543.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hospital_app_development"[0m
+  [1m[35m (218.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hospital_app_test"[0m
+  [1m[35m (951.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (81.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4489890031917224025)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20130909233501)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (67.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial NOT NULL PRIMARY KEY, "first_name" character varying, "last_name" character varying, "email_id" character varying, "user_type_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130909233501"]]
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserTypes (20130909233550)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (117.6ms)[0m  [1m[35mCREATE TABLE "user_types" ("id" serial NOT NULL PRIMARY KEY, "user_type_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130909233550"]]
+  [1m[35m (45.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateControllers (20130910023257)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (87.3ms)[0m  [1m[35mCREATE TABLE "controllers" ("id" serial NOT NULL PRIMARY KEY, "Sessions" character varying, "new" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130910023257"]]
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordToUsers (20130910025334)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" character varying[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130910025334"]]
+  [1m[35m (23.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddSaltToUsers (20130910025408)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "salt" character varying[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130910025408"]]
+  [1m[35m (20.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePatients (20130911020604)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (94.6ms)[0m  [1m[35mCREATE TABLE "patients" ("id" serial NOT NULL PRIMARY KEY, "first_name" character varying, "last_name" character varying, "date_of_birth" date, "phone" character varying, "email_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130911020604"]]
+  [1m[35m (36.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserPatients (20130911023006)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (89.5ms)[0m  [1m[35mCREATE TABLE "user_patients" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer, "patient_id" integer, "comments" text, "amount" integer, "comment_type_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130911023006"]]
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCommentTypes (20130911023348)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (90.9ms)[0m  [1m[35mCREATE TABLE "comment_types" ("id" serial NOT NULL PRIMARY KEY, "comment_type_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130911023348"]]
+  [1m[35m (14.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeDataTypeForUserPatient (20130912144234)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (91.8ms)[0m  [1m[35mALTER TABLE "user_patients" ALTER COLUMN "amount" TYPE decimal[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130912144234"]]
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddArchiveToUserPatients (20130914013108)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "user_patients" ADD "archive" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20130914013108"]]
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-10 02:38:55.734028"], ["updated_at", "2017-11-10 02:38:55.734028"]]
+  [1m[35m (27.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4489890031917224025)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

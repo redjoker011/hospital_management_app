@@ -1,4 +1,4 @@
-class ChangeDataTypeForUserPatient < ActiveRecord::Migration
+class ChangeDataTypeForUserPatient < ActiveRecord::Migration[5.0]
 
   def self.up
     change_table :user_patients do |t|
