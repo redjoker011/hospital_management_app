@@ -21,7 +21,7 @@
             </div>
             <div class="form-group span6">
               <%=u.label t(:user_type_label, :scope => :widget_names)%>
-              <%=u.select(:user_type_id, @user_types) %>
+              <%=u.select(:user_type_id, @user_types, {}, {class: "form-control"}) %>
             </div>
         </div>
         <div>
