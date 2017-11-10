@@ -54,6 +54,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.3)
+    coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -105,6 +106,9 @@ GEM
     prawn (0.12.0)
       pdf-reader (>= 0.9.0)
       ttfunk (~> 1.0.2)
+    pry (0.11.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     rack (2.0.3)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
@@ -200,6 +204,7 @@ DEPENDENCIES
   jquery-rails
   pg
   prawn (= 0.12.0)
+  pry
   rails
   rspec-rails
   sass-rails

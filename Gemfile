@@ -10,6 +10,7 @@ gem 'rspec-rails'
 gem 'webrat'
 gem 'factory_girl_rails'
 gem "factory_bot"
+gem "pry"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
